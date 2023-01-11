@@ -1,85 +1,35 @@
 {
-    "type":"MCU",
-    "name":"APT32F101",
-    "tags": ["CK802"],
-    "series":["APT32F101K8","APT32F101G8","APT32F101H8"],
-    "description":"APT 32bit C-Sky MCU",
-    "peripheral": ["ADC","TIM","PWM"],
-    "package":["LQFP32","QFN32","SOP28","SSOP24"],
-    "encryption": ["UID-96"],
+    "type":"CPU",
+    "name":"X2000",
+    "title": "ingenic X2000 CPU",
+    "description":"ingenic ISP Audio CPU",
     "Core": {
-        "num": 1,
-        "architecture":"CK802",
-        "Freq":20
-    },
-    "APT32F101K8": {
-        "SRAM":6000,
-        "Flash":64000,
-        "package":"LQFP32",
-        "peripheral": ["ADC","TIM","PWM"],
-        "GPIO":28,
-        "IRQ":4,
-        "price":2.8
-    },
-    "UART": {
-        "num": 2,
-        "ISO7816": true,
-        "speed": 115200
-    },
-    "ADC": {
-        "num": 1,
-        "type":"SAR",
-        "channel": 18,
-        "resolution": 12,
-        "rate": 512
-    },
-    "TIM": {
-        "resolution":[16,32,16,16,16],
-        "systick": 24,
-        "IWDG": true
-    },
-    "OPA": {
-        "num": 2,
-        "rate": [5,10,15]
-    },
-    "CMP": {
-        "num": 5,
-        "rate": [5,10,15]
-    },
-    "PWM": {
-        "num": 4,
-        "resolution": 8,
-        "rate": 256
-    },
-    "CLK": {
-        "HSE": [1000,16000],
-        "HSI": [16000],
-        "LSI": [32],
-        "PLL": [16000,16000],
-        "DIV": [1,128],
-        "accuracy": 0.02
-    },
-    "PWR": {
-        "VDD": [3000,5500],
-        "PVD": [1820,1810],
-        "IDD": [2.21,14.31],
-        "Imax": 120
-    },
-    "EMC": {
-        "EFT": 2000,
-        "ESD": 4000
-    },
-    "upload": {
-        "ISP": true,
-        "IAP": true,
-        "SWD": true,
-        "speed": 115200
+        "CoreNum": 3,
+        "Core":"XBurst",
+        "Fmax":1200,
+        "DMIPS": 4000,
+        "CoreMark": 8000
     },
     "manufacturer": {
-        "vendor":"APT",
-        "url": "http://www.aptchip.com"
+        "vendor":"ingenic",
+        "homepage":"http://www.ingenic.com.cn"
     },
-    "url":"http://www.SoC.xin/APT32F101",
-    "repo":"https://github.com/SoCXin/APT32F101",
-    "version":"1.0.0"
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/SoCXin/X2000.git"
+    },
+    "version":"1.0.0",
+    "series":["X2000"],
+    "package":["BGA270"],
+    "peripheral": ["MIPI","ETH","ISP","SDIO","UART","SPI","IIC"],
+    "ESD": {
+        "HBM": 2000,
+        "CDM": 500
+    },
+    "keywords": [
+        "XBurst",
+        "ingenic",
+        "MIPI","ETH","ISP","ADC","I2C","RTC","SPI","UART",
+        "3.6V","1.8V"
+    ]
 }

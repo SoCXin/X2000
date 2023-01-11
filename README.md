@@ -1,34 +1,54 @@
-﻿# [APT32F101](https://github.com/SoCXin/APT32F101)
+﻿# [X2000](https://doc.soc.xin/X2000)
 
-[![sites](http://182.61.61.133/link/resources/SoC.png)](http://www.SoC.Xin)
+* [ingenic](http://www.ingenic.com.cn): [MIPS](https://github.com/SoCXin/MIPS)
+* [L4R4](https://github.com/SoCXin/Level): 2x 1.2 GHz + 240 MHz
 
-#### [Vendor](https://github.com/SoCXin/Vendor) ：[APT](http://www.aptchip.com/)
-#### [Core](https://github.com/SoCXin/RISC)：[C-Sky](https://github.com/SoCXin/RISC)
-#### [Level](https://github.com/SoCXin/Level) ：20 MHz * 0.9 DMIPS/MHz
+## [简介](https://github.com/SoCXin/X2000)
 
-## [简介](https://github.com/SoCXin/APT32F101/wiki)
+[X2000](http://www.ingenic.com.cn/?product/id/34.html) 独特的三核结构：双核XBurst 2+XBurst 0结构；主核采用最新一代高性能处理器内核XBurst 2，小核擅长实时控制。XBurst 是北京君正完全自主知识产权的32位RISC CPU内核，兼容MIPS架构。内核包含128-bit SIMD扩展指令、硬件浮点运算单元、内存管理单元。
 
-[APT32F101](https://github.com/SoCXin/APT32F101)
+[![sites](docs/X2000.png)](http://www.ingenic.com.cn/?product/id/34.html)
 
-[![sites](docs/APT32F101.png)](http://www.aptchip.com/article/APT32F170)
+### 关键参数
 
-#### 关键特性
+* 双XBurst®2核，主频1.2GHz
+* 跨界第三核XBurst®0(240MHz)，面向安全管理和实时控制
+* H.264 编、解码器 1080P@30fps
+* 内置LPDDR3 128MB
+* 双摄Mipi接口+双ISP，可实时同步
+* JPEG 编解码器，处理能力70Mega-pixels/s
+* 丰富的外设接口 BGA270 12mm x 12 mm x 1.2mm，0.65mm Pitch
 
-* LED(8x8),8个大电流驱动的管脚(每个管脚最大120mA)
-* 2 x OPA (OPA0:1/2/3/4/5/6/7/8,OPA1:1/10/20/40/60/80/100/120),输出可以作为ADC的采样输入
-* 5 x CMP (可以独立选择内部248个参考电压)
-* 2 x UART
-* ADC 18 x 12 bit x 500KSPS
-* 16 bit增强型独立 PWM 模块，支持三路带死区控制的互补输出，支持与比较器联动工作（EPWM）
+#### 图像处理
 
-### [资源收录](https://github.com/SoCXin/APT32F101)
+* ISP处理器x2，支持双摄同步
+* CIM控制器x1，支持snapshot
+* 单ISP最大处理能力：1080P@120fps（MIPI-CSI 4-lane输入）
+* 双ISP同时工作时最大处理能力：1080P@60fps / ISP
+* 支持3个摄像头同时接入： MIPI-CSI 2-lane x2 + DVP x1
+* 摄像头接口最大分辨率：MIPI-CSI 4-lane，1080P@120fps
 
-* [参考文档](docs/)
+#### 音频处理器
+
+* 数字麦克风阵列控制器，支持8通道数字麦克风，语音唤醒
+* I2S x3
+* PCM 接口、S/PDIF接口
+
+#### 显示器接口
+
+* MIPI-DSI，分辨率可达1920x1080@40Hz
+* SLCD，分辨率可达640x480@60Hz，24BPP
+* RGB，分辨率可达1280x720@60Hz，24BPP
+
+### [资源收录](https://github.com/SoCXin)
+
 * [参考资源](src/)
+* [参考文档](docs/)
 * [参考工程](project/)
 
-### [选型建议](https://github.com/SoCXin)
+### [选型建议](https://github.com/SoCXin/X2000)
 
-[APT32F101](https://github.com/SoCXin/APT32F101)
+[X2000](https://github.com/SoCXin/X2000) 芯片典型功耗 <380mW
 
-###  [www.SoC.xin(芯)](http://www.SoC.Xin)
+
+### [www.SoC.xin](http://www.SoC.Xin)

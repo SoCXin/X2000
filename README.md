@@ -1,7 +1,7 @@
 ﻿# [X2000](https://doc.soc.xin/X2000)
 
 * [ingenic](http://www.ingenic.com.cn): [MIPS](https://github.com/SoCXin/MIPS)
-* [L4R4](https://github.com/SoCXin/Level): 2x 1.2 GHz + 240 MHz
+* [L6R6](https://github.com/SoCXin/Level): 2x 1.2 GHz + 240 MHz
 
 ## [简介](https://github.com/SoCXin/X2000)
 
@@ -11,7 +11,7 @@
 
 ### 关键参数
 
-* 双XBurst®2核，主频1.2GHz
+* 双XBurst®2核，主频1.2GHz (VS Cortex A53)
 * 跨界第三核XBurst®0(240MHz)，面向安全管理和实时控制
 * H.264 编、解码器 1080P@30fps
 * 内置LPDDR3 128MB
@@ -48,7 +48,9 @@
 
 ### [选型建议](https://github.com/SoCXin/X2000)
 
-[X2000](https://github.com/SoCXin/X2000) 芯片典型功耗 <380mW
+[X2000](https://github.com/SoCXin/X2000)属于多核异构跨界处理器，芯片典型功耗 <380mW
+
+北京君正成立于2005年，基于创始团队创新的CPU设计技术，迅速在消费电子市场实现SoC芯片产业化，2011年5月公司在深圳创业板上市（300223）
 
 
 ### [www.SoC.xin](http://www.SoC.Xin)
